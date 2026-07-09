@@ -1,0 +1,93 @@
+<svg width="1200"
+     height="190"
+     viewBox="0 0 1200 190"
+     xmlns="http://www.w3.org/2000/svg">
+
+<style>
+
+.bg {
+  fill: #0d1117;
+}
+
+.line {
+  stroke: #30363d;
+  stroke-width: 4;
+}
+
+.node {
+  fill: #161b22;
+  stroke: #3fb950;
+  stroke-width: 2;
+}
+
+.label {
+  font: 15px monospace;
+  fill: #e6edf3;
+}
+
+.packet {
+  fill: #58a6ff;
+  animation: move 7s linear infinite;
+}
+
+@keyframes move {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(900px);
+  }
+}
+
+</style>
+
+<rect width="1200"
+      height="190"
+      rx="14"
+      class="bg"/>
+
+<line x1="140"
+      y1="90"
+      x2="1040"
+      y2="90"
+      class="line"/>
+
+<circle cx="140" cy="90" r="28" class="node"/>
+<circle cx="320" cy="90" r="28" class="node"/>
+<circle cx="500" cy="90" r="28" class="node"/>
+<circle cx="680" cy="90" r="28" class="node"/>
+<circle cx="860" cy="90" r="28" class="node"/>
+<circle cx="1040" cy="90" r="28" class="node"/>
+
+<circle cx="140"
+        cy="90"
+        r="8"
+        class="packet"/>
+
+<text x="95" y="145" class="label">
+PRODUCTION
+</text>
+
+<text x="285" y="145" class="label">
+DATABASE
+</text>
+
+<text x="470" y="145" class="label">
+AUTOMATION
+</text>
+
+<text x="650" y="145" class="label">
+CLOUD
+</text>
+
+<text x="835" y="145" class="label">
+SRE
+</text>
+
+<text x="995" y="145" class="label">
+CLOUD NATIVE
+</text>
+
+</svg>
