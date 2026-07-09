@@ -105,16 +105,6 @@ status:
 
 ---
 
-## `kubectl get projects`
-
-| PROJECT                                  | ENGINEERING AREA               | STATUS           |
-| ---------------------------------------- | ------------------------------ | ---------------- |
-| Kubernetes Production Readiness Analyzer | Kubernetes / SRE               | 🚧 BUILDING      |
-| PostgreSQL Performance Lab               | Data Infrastructure            | 🔬 EXPERIMENTING |
-| MLOps Platform on Kubernetes             | Kubernetes / AI Infrastructure | 📐 DESIGNING     |
-| Infrastructure Automation Toolkit        | DevOps / Automation            | 🔧 ACTIVE        |
-| Open Source Contributions                | Kubernetes / PostgreSQL        | 🌱 STARTING      |
-
 ---
 
 ## `systemctl status engineering-evolution.service`
