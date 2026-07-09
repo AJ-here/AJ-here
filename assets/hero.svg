@@ -1,0 +1,137 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360"
+     xmlns="http://www.w3.org/2000/svg">
+
+<style>
+
+.bg {
+  fill: #0d1117;
+}
+
+.border {
+  fill: none;
+  stroke: #30363d;
+}
+
+.title {
+  font: 700 48px monospace;
+  fill: #e6edf3;
+}
+
+.command {
+  font: 22px monospace;
+  fill: #7d8590;
+}
+
+.output {
+  font: 700 27px monospace;
+  fill: #3fb950;
+}
+
+.sub {
+  font: 20px monospace;
+  fill: #8b949e;
+}
+
+.cursor {
+  fill: #3fb950;
+  animation: blink 1s steps(2,end) infinite;
+}
+
+.node {
+  fill: #3fb950;
+}
+
+.packet {
+  fill: #58a6ff;
+  animation: packet 4s linear infinite;
+}
+
+.status {
+  fill: #3fb950;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes pulse {
+  50% { opacity: .25; }
+}
+
+@keyframes packet {
+
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(720px);
+    opacity: 0;
+  }
+}
+
+</style>
+
+<rect class="bg" width="1200" height="360" rx="16"/>
+
+<rect class="border"
+      x="10"
+      y="10"
+      width="1180"
+      height="340"
+      rx="12"/>
+
+<circle cx="40" cy="38" r="7" fill="#ff5f56"/>
+<circle cx="65" cy="38" r="7" fill="#ffbd2e"/>
+<circle cx="90" cy="38" r="7" fill="#27c93f"/>
+
+<text x="40" y="105" class="command">
+AJ-here@control-plane:~$ whoami
+</text>
+
+<text x="40" y="165" class="title">
+AJAY NATH
+</text>
+
+<text x="40" y="215" class="output">
+INFRASTRUCTURE ENGINEER
+</text>
+
+<rect x="520" y="190"
+      width="15"
+      height="30"
+      class="cursor"/>
+
+<text x="40" y="265" class="sub">
+SRE · KUBERNETES · DATA INFRASTRUCTURE · MLOPS
+</text>
+
+<circle cx="60" cy="315" r="7" class="status"/>
+
+<text x="80" y="322" class="sub">
+CONTROL PLANE: ACTIVE
+</text>
+
+<line x1="420"
+      y1="315"
+      x2="1120"
+      y2="315"
+      stroke="#30363d"
+      stroke-width="2"/>
+
+<circle cx="420"
+        cy="315"
+        r="6"
+        class="packet"/>
+
+</svg>
